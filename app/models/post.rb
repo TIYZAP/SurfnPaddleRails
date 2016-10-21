@@ -1,12 +1,13 @@
 class Post
 
-  attr_accessor :id, :title, :body, :author, :created_at
+  attr_accessor :id, :title, :body, :author, :created_at, :image
 
   def initialize(args)
     self.id         = args[:id]
     self.title      = args[:title]
     self.body       = args[:body]
     self.author     = args[:author]
+    self.image      = args[:image]
     self.created_at = args[:created_at] || Time.now
   end
 
@@ -15,6 +16,7 @@ class Post
       @posts = [
         Post.new(
           id: 1,
+          image: "img1",
           title:  "The Apes and The Two Travelers",
           author: "Aesop",
           body: %q(
@@ -40,6 +42,7 @@ class Post
         ),
         Post.new(
           id: 2,
+          image: "img2",
           title: "Plymouth Rock and the Pilgrims",
           author: "Mark Twain",
           body: %q(
@@ -61,6 +64,7 @@ class Post
         ),
         Post.new(
           id: 3,
+          image: "img3",
           title:  "The Lady in Pink",
           author: "Sir Arthur Conan Doyle",
           body: %q(
@@ -86,6 +90,7 @@ class Post
         ),
         Post.new(
           id: 4,
+          image: "img4",
           title:  "Consider the Lobster",
           author: "David Foster Wallace",
           body: %q(
@@ -111,6 +116,7 @@ class Post
         ),
         Post.new(
           id: 5,
+          image: "img1",
           title:  "Dr. Strangelove (or, how I learned to stop worrying and love the bomb)",
           author: "Stanley Kubrick",
           body: %q(

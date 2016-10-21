@@ -56,7 +56,6 @@
 #article {
   float:left;
   width: 50%;
-  height: 1100px;
   border: 10px;
   border-radius: 25px;
   padding-top:50px;
@@ -184,19 +183,20 @@
   text-transform: capitalize;
   display:inline-block;
 }
-/*.photo1{
-  width:25%;
-  opacity: .5;
-}
-.photo2{
+.photo{
   width:25%;
   margin-left: -4.75px;
   opacity: .5;
 }
+/*.photo2{
+  width:25%;
+  margin-left: -4.75px;
+  opacity: .5;
+}*/
 .photo:hover{
   opacity: 1;
 }
-.photo2:hover{
+/*.photo2:hover{
   opacity: 1;
 }*/
 
