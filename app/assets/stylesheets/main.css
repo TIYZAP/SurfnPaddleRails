@@ -98,6 +98,10 @@
   display: block;
 }
 
+#social{
+text-align: center;
+}
+
 
 #infobar{
   float:right;
