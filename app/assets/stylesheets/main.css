@@ -23,6 +23,7 @@
 
 .top-head{
   position:absolute;
+  cursor:pointer;
   font-size: 18;
   color: white;
   top: 30px;
@@ -46,6 +47,7 @@
   color: white;
   text-align: right;
   position:absolute;
+  cursor:pointer;
   top:30px;
   right: 50px;
   display:inline;
@@ -162,15 +164,15 @@ text-align: center;
   clear:both;
 }
 
-.bottombar-text{
-  padding-top: 25px;
-  text-align: center;
-  font-family: Helvetica;
-  font-style: italic;
-  font-size: 50px;
-  color: #808080;
-  clear:inherit;
-}
+  .bottombar-text{
+    padding-top: 25px;
+    text-align: center;
+    font-family: Helvetica;
+    font-style: italic;
+    font-size: 50px;
+    color: #808080;
+    clear:inherit;
+  }
 
 #footlinks{
   width:100%;
@@ -179,8 +181,8 @@ text-align: center;
   position:relative;
 }
 .text{
-  position: absolute;
-  color: #333333;
+  position: relative;
+  color: red;
   bottom: 10px;
   margin-left: 15px;
   font-size: 32;
@@ -217,7 +219,7 @@ text-align: center;
   color: #b2b2b2;
 }
 #footer a:hover{
-  color:#ffffCC;
+  color:#FFCE1F;
 }
 
 #footer img{

@@ -2,14 +2,15 @@
   <div id="cover">
       <%= image_tag "header.jpg" %>
       <div class="cover-text">
-        <h1>Raid Wave</h1>
+        <h1>SURF & PADDLE CO.</h1>
+        <h5>An Iron Yard Academy Project Est. Fall 2016</h5>
       </div>
         <%= image_tag "logo-surf-and-paddle.svg", :class =>"text-top-head"%>
       <div class="top-head">
-        <p>RAID WAVE.BLOG</p>
+        <p>SURF & PADDLE CO.BLOG</p>
       </div>
       <div id="cover-nav-text">
-        <p>About Search</p>
+        <p>ABOUT SEARCH<span class="glyphicon glyphicon-search" aria-hidden="true"></span></p>
       </div>
   </div>
 
@@ -20,7 +21,7 @@
       <div class="article-header-info">
         <%= image_tag "circlepic.jpg" %>
         <p class="author"><%= @post.author %></p>
-        <p>on <%= @post.created_at.strftime("%B %e, %Y")  %></p>
+        <p>on <%= @post.created_at.strftime("%B %e, %Y")%></p>
       </div>
         <p><%= @post.body%></p>
         <br />
@@ -39,7 +40,7 @@
       <%= image_tag "circlepic", :class => "author"%>
       <p class="infobar-section-heading"><%= @post.author %></p>
       <p id="social"><a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
-      <a href="#"><%= image_tag "sidepic.jpg", :class => "advert"%></a>
+      <a href="#"><%= image_tag "sidepic.jpg", :class => "advert"%></a><a href="#">About This Ad</a>
       <div class="infobar">
         <h3>Header</h3>
         <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -56,8 +57,9 @@
       <% @post2.each do |post|%>
       <%= link_to image_tag(post.image, class: "photo"),link_path(id: post.id)%>
      <%end%>
-        <div class="text">
-        </div>
+        <!-- <div class="text">
+           <h4><%= @post.title %></h4>
+        </div> -->
       </div>
 
 
