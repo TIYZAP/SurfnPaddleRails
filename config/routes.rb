@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'welcome#index'
-  get 'post/:id' => 'welcome#show'
+  get 'post/:id' => 'welcome#show', as: :link
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

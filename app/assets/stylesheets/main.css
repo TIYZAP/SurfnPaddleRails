@@ -23,6 +23,7 @@
 
 .top-head{
   position:absolute;
+  cursor:pointer;
   font-size: 18;
   color: white;
   top: 30px;
@@ -46,6 +47,7 @@
   color: white;
   text-align: right;
   position:absolute;
+  cursor:pointer;
   top:30px;
   right: 50px;
   display:inline;
@@ -56,7 +58,6 @@
 #article {
   float:left;
   width: 50%;
-  height: 1100px;
   border: 10px;
   border-radius: 25px;
   padding-top:50px;
@@ -97,6 +98,10 @@
   text-indent: 20px;
   text-align: bottom;
   display: block;
+}
+
+#social{
+text-align: center;
 }
 
 
@@ -159,15 +164,15 @@
   clear:both;
 }
 
-.bottombar-text{
-  padding-top: 25px;
-  text-align: center;
-  font-family: Helvetica;
-  font-style: italic;
-  font-size: 50px;
-  color: #808080;
-  clear:inherit;
-}
+  .bottombar-text{
+    padding-top: 25px;
+    text-align: center;
+    font-family: Helvetica;
+    font-style: italic;
+    font-size: 50px;
+    color: #808080;
+    clear:inherit;
+  }
 
 #footlinks{
   width:100%;
@@ -176,27 +181,28 @@
   position:relative;
 }
 .text{
-  position: absolute;
-  color: #333333;
+  position: relative;
+  color: red;
   bottom: 10px;
   margin-left: 15px;
   font-size: 32;
   text-transform: capitalize;
   display:inline-block;
 }
-/*.photo1{
-  width:25%;
-  opacity: .5;
-}
-.photo2{
+.photo{
   width:25%;
   margin-left: -4.75px;
   opacity: .5;
 }
+/*.photo2{
+  width:25%;
+  margin-left: -4.75px;
+  opacity: .5;
+}*/
 .photo:hover{
   opacity: 1;
 }
-.photo2:hover{
+/*.photo2:hover{
   opacity: 1;
 }*/
 
@@ -213,7 +219,7 @@
   color: #b2b2b2;
 }
 #footer a:hover{
-  color:#ffffCC;
+  color:#FFCE1F;
 }
 
 #footer img{
