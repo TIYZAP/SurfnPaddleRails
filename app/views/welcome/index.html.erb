@@ -60,6 +60,7 @@
     <h1 class="bottombar-text">Most Popular Post</h1>
 </div>
 
+
 <div id="footlinks">
     <% @post2.each do |post|%>
     <%= link_to image_tag(post.image, class: "photo"),link_path(id: post.id)%>
