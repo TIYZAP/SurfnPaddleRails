@@ -116,7 +116,7 @@ class Post
         ),
         Post.new(
           id: 5,
-          image: "img1",
+          image: "img5",
           title:  "Dr. Strangelove (or, how I learned to stop worrying and love the bomb)",
           author: "Stanley Kubrick",
           body: %q(
