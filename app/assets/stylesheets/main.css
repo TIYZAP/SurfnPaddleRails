@@ -1,5 +1,4 @@
 *{
-  /*margin:0;*/
   padding:0;
   border:0;
   font-family: Helvetica;
@@ -12,7 +11,6 @@
 
 .cover-text{
   font-family:Helvetica ;
-  font-size: 50px;
   color: #FFCE1F;
   text-align: center;
   position:absolute;
@@ -21,7 +19,13 @@
   margin:auto;
 }
 
-.top-head{
+.cover-text h1{
+font-size: 75px;
+}
+
+
+
+.nav-top{
   position:absolute;
   cursor:pointer;
   font-size: 18;
@@ -32,7 +36,9 @@
   width: 100%;
   clear:left;
 }
-#cover .text-top-head{
+
+
+#cover .logo-top{
   width:50px;
   border-radius: 100%;
   display:inline;
@@ -43,7 +49,9 @@
   left:30px;
   clear:left;
 }
-#cover-nav-text{
+
+
+#nav-right{
   color: white;
   text-align: right;
   position:absolute;
@@ -65,10 +73,8 @@
   position:relative;
 }
 
-#article p{
-}
 
-.article-header-info{
+.author-info{
   display:inline-block;
   vertical-align: middle;
   font-style: italic;
@@ -76,7 +82,7 @@
   margin: 0px 0px 10px 0px;
 }
 
-.article-header-info img{
+.author-info img{
   width:8%;
   border-radius: 100%;
   float: left;
@@ -89,7 +95,7 @@
   color: #000052;
 }
 
-.quote{
+.mid-header{
   border-left:3px solid #191975;
   height: 30px;
   margin-left: 10px;
@@ -105,7 +111,7 @@ text-align: center;
 }
 
 
-#infobar{
+#sidebar{
   float:right;
   width:30%;
   margin-right: 75px;
@@ -115,16 +121,16 @@ text-align: center;
   text-align: left;
 }
 
-#infobar a{
+#sidebar a{
   text-align: center;
   color: #c0c0c0;
 }
-#infobar a:hover{
+#sidebar a:hover{
   text-decoration: none;
   color: #33334C;
 }
 
-.infobar-section-heading{
+.sidebar-section-heading{
   font-size: 20px;
   text-transform: uppercase;
   color: #191975;
@@ -132,7 +138,7 @@ text-align: center;
   text-align: center;
 }
 
-.infobar{
+.sidebar{
   margin-top: 10px;
   color: #191975;
 }
@@ -141,7 +147,7 @@ text-align: center;
   color: #c0c0c0;
 }
 
-#infobar .author{
+#sidebar .author{
   width: 40%;
   border-radius: 100%;
   padding-top: 10px;
@@ -149,7 +155,7 @@ text-align: center;
   margin: auto;
 }
 
-#infobar .advert{
+#sidebar .advert{
   width: 100%;
   padding-top: 20px;
 }
