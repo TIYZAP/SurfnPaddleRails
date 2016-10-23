@@ -1,5 +1,5 @@
 *{
-  margin:0;
+  /*margin:0;*/
   padding:0;
   border:0;
   font-family: Helvetica;
@@ -174,21 +174,31 @@ text-align: center;
     clear:inherit;
   }
 
+
+
 #footlinks{
   width:100%;
   padding: 0;
   margin: 0;
   position:relative;
 }
+
 .text{
-  position: relative;
-  color: red;
+  position: absolute;
+  color: #FFCE1F;
   bottom: 10px;
-  margin-left: 15px;
+  margin-left: -425px;
   font-size: 32;
   text-transform: capitalize;
   display:inline-block;
 }
+
+
+
+.carousel-caption{
+
+}
+
 .photo{
   width:25%;
   margin-left: -4.75px;
@@ -202,6 +212,7 @@ text-align: center;
 .photo:hover{
   opacity: 1;
 }
+
 /*.photo2:hover{
   opacity: 1;
 }*/
