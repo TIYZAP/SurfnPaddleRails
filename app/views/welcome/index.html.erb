@@ -1,72 +1,84 @@
-
-  <div id="cover">
-      <%= image_tag "header.jpg" %>
-      <div class="cover-text">
+<div id="cover">
+    <%= image_tag "header.jpg" %>
+    <div class="cover-text">
         <h1>SURF & PADDLE CO.</h1>
         <h5>An Iron Yard Academy Project Est. Fall 2016</h5>
-      </div>
-        <%= image_tag "logo-surf-and-paddle.svg", :class =>"logo-top"%>
-      <div class="nav-top">
+    </div>
+    <%= image_tag "logo-surf-and-paddle.svg", :class =>"logo-top"%>
+    <div class="nav-top">
         <p>SURF & PADDLE CO.BLOG</p>
-      </div>
-      <div id="nav-right">
-        <p>ABOUT SEARCH<span class="glyphicon glyphicon-search" aria-hidden="true"></span></p>
-      </div>
-  </div>
+    </div>
+    <div id="nav-right">
+        <p>ABOUT SEARCH<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        </p>
+    </div>
+</div>
 
-    <div id="article">
-      <div class="article-header">
+<div id="article">
+    <div class="article-header">
         <h2><%= @post.title %></h2>
-      </div>
-      <div class="author-info">
+    </div>
+    <div class="author-info">
         <%= image_tag "circlepic.jpg" %>
         <p class="author"><%= @post.author %></p>
-        <p>on <%= @post.created_at.strftime("%B %e, %Y")%></p>
-      </div>
-        <p><%= @post.body%></p>
-        <br />
-        <h3 class="mid-header">Blah Blah Blah</h3>
-        <p><%= @post.body%></p>
-
-        <button type="button" class="btn btn-default">
-          <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>Read Comments</button>
-          <button type="button" class="btn btn-default">
-            <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span>Read Later</button>
-            <button type="button" class="btn btn-default">
-              <span class="glyphicon glyphicon-share" aria-hidden="true"></span>Share This Post</button>
-
+        <p>on
+            <%= @post.created_at.strftime("%B %e, %Y")%></p>
     </div>
-    <div id="sidebar">
-      <%= image_tag "circlepic", :class => "author"%>
-      <p class="sidebar-section-heading"><%= @post.author %></p>
-      <p id="social"><a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
-      <a href="#"><%= image_tag "sidepic.jpg", :class => "advert"%></a><a href="#">About This Ad</a>
-      <div class="sidebar">
+    <p><%= @post.body%></p>
+    <br/>
+    <h3 class="mid-header">Blah Blah Blah</h3>
+    <p><%= @post.body%></p>
+
+    <button type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>Read Comments</button>
+    <button type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span>Read Later</button>
+    <button type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-share" aria-hidden="true"></span>Share This Post</button>
+
+</div>
+<div id="sidebar">
+    <%= image_tag "circlepic", :class => "author"%>
+    <p class="sidebar-section-heading"><%= @post.author %></p>
+    <p id="social">
+        <a href="#">Twitter</a>
+        |
+        <a href="#">Instagram</a>
+        |
+        <a href="#">Facebook</a>
+    </p>
+    <a href="#"><%= image_tag "sidepic.jpg", :class => "advert"%></a>
+    <a href="#">About This Ad</a>
+    <div class="sidebar">
         <h3>Header</h3>
-        <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-      </div>
     </div>
-    <div id="bottombar">
-      <h1 class="bottombar-text">Most Popular Post</h1>
+</div>
+<div id="bottombar">
+    <h1 class="bottombar-text">Most Popular Post</h1>
+</div>
+
+<div id="footlinks">
+    <% @post2.each do |post|%>
+    <%= link_to image_tag(post.image, class: "photo"),link_path(id: post.id)%>
+    <div class="text">
+        <h3><%= post.title %></h3>
     </div>
+    <%end%>
+</div>
 
-
-    <div id="footlinks">
-      <% @post2.each do |post|%>
-      <%= link_to image_tag(post.image, class: "photo"),link_path(id: post.id)%>
-        <div class="text">
-           <h3><%= post.title %></h3>
-        </div>
-        <%end%>
-      </div>
-
-
-    <div id="footer">
-      <a href="#"><%= image_tag "ironlogo.svg"%></a>
-      <p class="footer-left">The Iron Yard Copyright 2013, All Rights Reserved</p>
-      <div class="footer-right">
-        <a href="https://www.linkedin.com/">Author</a> | <a href="http://theironyard.com/">The Iron Yard</a> |
-        <a href="https://www.google.com/">Link 3</a> | <a href="https://www.instagram.com/">Link 4</a>
-      </div>
+<div id="footer">
+    <a href="#"><%= image_tag "ironlogo.svg"%></a>
+    <p class="footer-left">The Iron Yard Copyright 2013, All Rights Reserved</p>
+    <div class="footer-right">
+        <a href="https://www.linkedin.com/">Author</a>
+        |
+        <a href="http://theironyard.com/">The Iron Yard</a>
+        |
+        <a href="https://www.google.com/">Link 3</a>
+        |
+        <a href="https://www.instagram.com/">Link 4</a>
     </div>
+</div>
