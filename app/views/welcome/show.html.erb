@@ -53,13 +53,12 @@
 
 
     <div id="footlinks">
-      <div class="screen"></div>
       <% @post2.each do |post|%>
       <%= link_to image_tag(post.image, class: "photo"),link_path(id: post.id)%>
-     <%end%>
-        <!-- <div class="text">
-           <h4><%= @post.title %></h4>
-        </div> -->
+        <div class="text">
+           <h3><%= post.title %></h3>
+        </div>
+        <%end%>
       </div>
 
 
